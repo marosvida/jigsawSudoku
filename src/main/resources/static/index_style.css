@@ -1,0 +1,16 @@
+body{
+    max-width: 100%;
+}
+
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    max-width: 100%;
+}
+
+footer{
+    width: 100%;
+}

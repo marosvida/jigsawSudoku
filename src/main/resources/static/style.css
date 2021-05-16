@@ -1,0 +1,148 @@
+body{
+    max-width: 100%;
+}
+
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    max-width: 100%;
+}
+
+footer{
+    width: 100%;
+}
+
+.btn-field{
+    padding: .6rem 1.2rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.field{
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.tile a{
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+    color: white;
+}
+
+.blue{background-color: blue;}
+
+.red{background-color: red;}
+
+.green{background-color: green;}
+
+.yellow{background-color: lawngreen}
+
+.purple{background-color: darkmagenta;}
+
+.black{background-color: black;}
+
+.crimson{background-color: crimson}
+
+.cyan{background-color: cyan;}
+
+.orange{background-color: orange;}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    visibility: hidden;
+}
+
+#rateBtn{
+    width: 100%;
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 6vw;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+h1 {
+    text-align: center
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 14px
+    }
+
+    p {
+        font-size: 12px
+    }
+}
+
+.currRating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.currRating>input {
+    display: none;
+}
+
+.currRating>label {
+    position: relative;
+    width: 1em;
+    color: #FFD600;
+}
+
+.currRating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.currRating>label:hover:before,
+.currRating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.currRating>input:checked~label:before {
+    opacity: 1
+}
