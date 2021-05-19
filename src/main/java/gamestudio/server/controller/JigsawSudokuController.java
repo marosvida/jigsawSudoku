@@ -127,12 +127,12 @@ public class JigsawSudokuController {
         StringBuilder sb = new StringBuilder();
         sb.append("<form action='/rate' class='rating' id='addRatingForm'>");
 
-        int currPlayerRating = 0;
+        int currPlayerRating = 1;
         if(userController.isLogged()){
             try{
                 currPlayerRating = ratingService.getRating("jigsawSudoku", userController.getLoggedUser().getLogin());
             } catch (RatingException e) {
-                currPlayerRating = 0;
+                currPlayerRating = 1;
             }
         }
 
